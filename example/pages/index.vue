@@ -40,6 +40,9 @@ export default {
         case 'xl':
           backgroundColor = '#FF406E'
           break
+        case 'xxl':
+          backgroundColor = '#ff9800'
+          break
         default:
           backgroundColor = '#fff'
           break
@@ -57,7 +60,7 @@ export default {
       easing: 'easeInOutCubic',
       loop: true,
       direction: 'alternate',
-      duration: 10000,
+      duration: false,
       width: '100%'
     })
   }
@@ -68,6 +71,7 @@ export default {
 body {
   width: 200px;
   margin: 0 auto;
+  // overflow: auto scroll;
   overflow: hidden;
   color: white;
   background: #333;

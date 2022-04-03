@@ -2,12 +2,15 @@
 
 > Resize observer breakpoints with Nuxt.js module.
 
-[![NPM](https://nodei.co/npm/nuxt-breakpoints.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nuxt-breakpoints/)
-<a href="https://www.buymeacoffee.com/steven0811" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 [![Codecov](https://codecov.io/gh/steven0811/nuxt-breakpoints/branch/master/graph/badge.svg)](https://codecov.io/gh/steven0811/nuxt-breakpoints)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Package Size](https://img.shields.io/bundlephobia/minzip/nuxt-breakpoints)](https://nodei.co/npm/nuxt-breakpoints/)
 
+## New Update
+ - Add breakpoint 1600px(xxl)
+ - Can include scrollbar size on breakpoints
+ - Fork from https://github.com/stevenho0811/nuxt-breakpoints
 
 
 [DEMO](https://steven0811.github.io/nuxt-breakpoints/)
@@ -41,9 +44,11 @@ yarn add nuxt-breakpoints # or npm install nuxt-breakpoints
     md: 768,
     lg: 992,
     xl: 1200,
+    xxl: 1600, // Add new breakpoint
     options: {
       polyfill: true,
-      throttle: 200
+      throttle: 200,
+      scrollbar: true // Include scrollbar width | height in breakpoints
     }
   }
 }
@@ -72,7 +77,8 @@ export default {
 | sm       | number                                      | 576                               | >= 576px(sm) && <= 768px(md)                                                                                                                                                                                                  |
 | md       | number                                      | 768                               | >= 768px(md) && <= 992px(lg)                                                                                                                                                                                                  |
 | lg       | number                                      | 992                               | >= 992px(lg) && <= 1200px(xl)                                                                                                                                                                                                 |
-| xl       | number                                      | 1200                              | >= 1200px, Extra large, largest.                                                                                                                                                                                              |
+| xl       | number                                      | 1200                              | >= 1200px(xl) && <= 1600px(xxl)                                                                                                                                                                                              |
+| xxl       | number                                      | 1600                              | >= 1600, Extra large, largest.                                                                                                                                                                                              |
 | options  | object<polyfill: boolean, throttle: number> | { polyfill: true, throttle: 200 } | `polyfill` default by true, which means will auto-import `resize-observer-polyfill` when the browser doesn't support ResizeObserver more information below, `throttle` will slow down when Window has resizing trigger speed. |
 
 ## Development

@@ -30,7 +30,8 @@ module.exports = {
   breakpoints: {
     options: {
       polyfill: true,
-      throttle: 10
+      throttle: 10,
+      scrollbar: true
     }
   }
 }
