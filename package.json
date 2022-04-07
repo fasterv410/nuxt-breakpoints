@@ -1,6 +1,6 @@
 {
   "name": "nuxt-breakpoints-v2",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Resize observer breakpoints with Nuxt.js module.",
   "license": "MIT",
   "keywords": [
@@ -17,7 +17,7 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/fasterv410/nuxt-breakpoints.git",
+  "repository": "https://github.com/fasterv410/nuxt-breakpoints-v2.git",
   "publishConfig": {
     "access": "public"
   },

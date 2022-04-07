@@ -11,8 +11,6 @@
  - Add breakpoint 1600px(xxl)
  - Can include scrollbar size on breakpoints
  - Add loading params for checking load on client
- - Fork from https://github.com/stevenho0811/nuxt-breakpoints
-
 
 [DEMO](https://steven0811.github.io/nuxt-breakpoints/)
 
