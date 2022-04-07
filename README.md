@@ -10,6 +10,7 @@
 ## New Update
  - Add breakpoint 1600px(xxl)
  - Can include scrollbar size on breakpoints
+ - Add loading params for checking load on client
  - Fork from https://github.com/stevenho0811/nuxt-breakpoints
 
 
@@ -68,6 +69,17 @@ export default {
     // ... etc lSm lMd lLg, and sSm sMd sLg
   }
 }
+```
+
+```html
+<!-- components.vue -->
+<template>
+  <div v-if="$breakpoints.loading">Loading...</div>
+  <div v-else>
+    <h1>Page title</h1>
+    <p>Page content</p>
+  </div>
+</template>
 ```
 
 ## Options
