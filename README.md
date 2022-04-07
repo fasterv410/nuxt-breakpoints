@@ -1,4 +1,4 @@
-# nuxt-breakpoints
+# nuxt-breakpoints-v2
 
 > Resize observer breakpoints with Nuxt.js module.
 
